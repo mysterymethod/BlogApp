@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+
+<form action="/register" method="POST">
+  <div class="login-box">
+    <h1> Register </h1>
+    <div class="textbox">
+      <i class="fas fa-user"></i>
+      <input type="email" placeholder="Username" name="username" value="">
+    </div> 
+
+    <div class="textbox">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Password" name="password" value="">
+    </div>
+
+    <div class="textbox">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Confirm Password" name="" value="">
+    </div>
+    
+    <button type="submit" class="btn">Register</button>
+
+    <hr>
+    <p class="or"> OR </p>
+
+    <a class="btn socialBtn" href="/auth/google" role="button">
+      <img src="http://pngimg.com/uploads/google/google_PNG19635.png" class="logo">
+      Register with Google
+    </a>
+
+    <a class="btn socialBtn" href="/auth/facebook" role="button">
+      <img src="http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19753.png" class="logo">
+      Register with Facebook
+    </a>
+  </div>
+</form>
+
+
+
+
+<%- include('partials/footer') %>
